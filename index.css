@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    /* ### Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+/* ### Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+body{
+    background-image: url('/images/bg-pattern-top-desktop.svg'),url('/images/bg-pattern-bottom-desktop.svg');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 90%;
+    margin: 2% auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 323px;
+}
+.header h2{
+    color: var(--Very-Dark-Magenta);
+    font-size: 4rem;   
+}
+.header p{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 1.3rem;
+}
+.stars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.stars .firstStar,.secondStar,.thirdStar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 52px;
+    border-radius: 8px;
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+}
+.secondStar{
+    margin-left: 18px;
+}
+.thirdStar{
+    margin-left: 36px;
+}
+.star{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+.allstar{
+    background-image: url('/images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 230px;
+    background-color: var( --Very-Dark-Magenta);
+    border-radius: 8px;
+    padding: 23px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 230px;
+    background-color: var( --Very-Dark-Magenta);
+    border-radius: 8px;
+    padding: 23px;
+    margin-top: 12px;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 230px;
+    background-color: var( --Very-Dark-Magenta);
+    border-radius: 8px;
+    padding: 23px;
+    margin-top: 24px;
+}
+
+.info{
+    display: flex;
+}
+.img_1{
+    background-image: url('/images/image-colton.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.img_2{
+    background-image: url('/images/image-irene.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.img_3{
+    background-image: url('/images/image-anne.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.name_1,.name_2,.name_3{
+    font-size: 1.3rem;
+    margin-left: 15px;
+}
+span{
+    color: var(--Soft-Pink);
+}
+
+@media only screen and (max-width: 758px){
+    .container1{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .header,.stars{
+        width: 100%;
+    }
+    .header{
+        text-align: center;
+    }
+    .stars{
+        height: 241px;
+    }
+    .firstStar,.secondStar,.thirdStar{
+        margin: auto;
+    }
+    .container2{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .first,.third,.second{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 383px){
+    .firstStar,.thirdStar,.secondStar{
+        width: 100%;
+    }
+    .container1{
+        height: 659px;
+    }
+
+}
